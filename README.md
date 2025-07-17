@@ -6,6 +6,7 @@ This repository contains a variety of SystemVerilog assertion examples for learn
 ## Contents
 
 - Immediate Assertions
+- Deferred Immediate Assertions
 - Concurrent Assertions
   - Basic signal checks
   - Reset behavior
