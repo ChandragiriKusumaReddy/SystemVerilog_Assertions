@@ -1,4 +1,3 @@
-# SystemVerilog_Assertions
 
 # SystemVerilog Assertions (SVA) Examples
 
