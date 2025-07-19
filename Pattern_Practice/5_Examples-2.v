@@ -69,4 +69,5 @@ assert property(p_trigger_response);
 //Explanation:
 // ##[1:2] → Allows response to go high in either 1st or 2nd cycle after trigger
 // (response && ##1 response) → ensures it's high for at least 2 cycles
+
   
