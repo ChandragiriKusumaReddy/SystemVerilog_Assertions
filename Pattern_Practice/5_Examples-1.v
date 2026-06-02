@@ -2,12 +2,12 @@
 Q1.)Write an assertion to check that ready must be high 2 clock cycles after reset is deasserted (active high sync reset).
 Ans:
 property p_reset_ready;
-  @(posedge clk) disable iff(rst) $rose(!rst) |=> ##2 ready;
+  @(posedge clk) disable iff(rst) $fell(rst) |=> ##2 ready;
 endproperty
 assert property(p_reset_ready);
 //Explanation:
 // disable iff (reset) disables checking when reset is high
-// $rose(!reset) → detects falling edge of reset (1 → 0)
+// $fell(reset) → detects falling edge of reset (1 → 0)
 // |=> ##2 ready → after 2 cycles, ready must be high
 
 
